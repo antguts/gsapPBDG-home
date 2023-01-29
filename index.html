@@ -32,23 +32,54 @@
     }
     body{
         /* position:absolute; */
-        background-image: url( './img.svg' );
+        /* background-image: url( './img.svg' );
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center; */
         /* z-index: 121; */
         /* height: 200px; */
     }
 
+    svg {
+        margin-left: 30%;
+        position:absolute;
+        /* overflow: visible; */
+        height: 125vh;
+        z-index: -1;
+        /*   Fix Safari rendering bug */
+        transform: translateZ(0);
+    }
+    #discIMG{
+        height: 150px;
+        width: 150px;
+        background-image: url( './Asset1.png' );
+        background-repeat: no-repeat;
+        background-position: center; */
+    }
+    
 
 </style>
 
 
 
 <body>
-
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 195.92 702.31">
+        <defs>
+            <style>
+                .cls-1 {
+                    fill: none;
+                    stroke: #000;
+                    stroke-miterlimit: 10;
+                }
+            </style>
+        </defs>
+        <path class="cls-1" d="m195.5.28C127.07,103,9.05,314.32.94,601.36c-.99,34.9-.28,68.59,1.74,100.92"/>
+    </svg>
+    
+    
     <div class="hero">
     </div>
-
+    
+    <div id="discIMG"></div>
     <div class="section">
     </div>
     <div class="section">
@@ -58,8 +89,9 @@
     <div class="final">
     </div>
 
-    <div class="svgImg">
-    </div>   
+      
+      
+
     <div class="footer">
     </div>
 
@@ -69,11 +101,8 @@
 
 </body>
 
-
-<script>
-
-</script>
-
-
+<script></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </html>
